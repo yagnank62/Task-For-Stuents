@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html basics</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1B1B1B;
+}
+.qn-box{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+.qn-box .qsbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    color: #555555;
+    padding: 16px;
+}
+.qn-box .qsbox .q{
+    color: skyblue;
+}
+.qn-box .qsbox .qs{
+    word-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.qn-box .ansbox{
+    width: 100%;
+    background-color: #171717;
+    height: auto;
+}
+.qn-box .ansbox span{
+    display: block;
+    padding: 15px 15px;
+    color: #555555;
+    line-height: 35px;
+}
+.qn-box .ansbox span mark{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+    padding: 6px;
+    margin: 0 15px 0 0;
+    color: rgb(15,180,245);
+}
+
+.qn-box .ansbox form{
+    margin-top: 20px;
+}
+.qn-box .ansbox fieldset{
+    width: fit-content;
+    padding: 25px;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+legend:hover{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+}
+.space{
+    margin: 5%;
+    
+}
+::selection {
+    background-color: #121212;
+    color: #EDEDED;
+    text-shadow: none;
+}
+p{
+    text-align: justify;
+}
+p span{
+    color: rgb(15,180,245) !important;
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width:688px) {
+    .qn-box .qsbox{
+        flex-direction: column;
+    }
+    .qn-box .qsbox .q{
+        margin: 4% 0%;
+    }
+    mark{
+        display: block;
+        width: fit-content;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="space"></div>
+    <!-- question 5 -->
+    <div class="qn-box">
+        <div class="qsbox"> <div class="q">Q</div> <div class="qs">What is HTML ? </div></div>
+        <div class="ansbox">
+            <span> <mark> HTML: </mark>
+                <p>html stands for hyper text markup language</p>
+                
+                <mark>Histroy of Html</mark>
+                <p> Html developed by  Tim Berners-Lee in 1989 The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991</p> 
+                <hr width="140">
+                <p> The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999. </p>
+                <hr width="140">
+                <p>
+                    Another version, XHTML, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication). Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000, and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible. 
+                </p>
+                <mark>versions of Html</mark>
+                <p>
+                   <span>HTML 1.0</span>
+                   <span>HTML 2</span>
+                   <span>HTML 3.2</span>
+                   <span>HTML 4.01</span>
+                   <span>HTML5</span>
+                </p>
+                <br>
+                <mark>why we use</mark>
+                <p> HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and <mark> structure of web content.</mark> we can see text ,images , form etc in website they all content provied by html.
+                </p>
+                <form>
+                    <fieldset>
+                      <legend>Example what is structure</legend>
+                        <mark> what is structure </mark> <br>
+                        <p><h2>Below link show the role of html structure </h2></p>
+                            <a href="https://pbs.twimg.com/media/FDMa8XGXsAMd5AD.jpg:large" target="_blank"> click here for html structure example </a> <br>
+                            <p><h2>Real time html structure example link</h2></p>
+                            <a href="https://devpractical.com/public/2022/first-html-website.jpg" target="_blank"> click here for see real time html structure example </a>
+                            <br>
+                        <hr> <br>
+                    </fieldset>
+                  </form>
+            </span>
+        </div>
+    </div>
+    <div class="space"></div>
+</body>
+</html>

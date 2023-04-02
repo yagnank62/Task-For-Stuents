@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Headings & Formatting Tags</title>
+    <style>
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1B1B1B;
+}
+.qn-box{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+.qn-box .qsbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    color: #555555;
+    padding: 16px;
+}
+.qn-box .qsbox .q{
+    color: skyblue;
+}
+.qn-box .qsbox .qs{
+    word-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.qn-box .ansbox{
+    width: 100%;
+    background-color: #171717;
+    height: auto;
+}
+.qn-box .ansbox span{
+    display: block;
+    padding: 15px 15px;
+    color: #555555;
+    line-height: 35px;
+}
+.qn-box .ansbox span mark{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+    padding: 6px;
+    margin: 0 15px 0 0;
+    color: rgb(15,180,245);
+}
+
+.qn-box .ansbox form{
+    margin-top: 20px;
+}
+.qn-box .ansbox fieldset{
+    width: fit-content;
+    padding: 25px;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+legend:hover{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+}
+.space{
+    margin: 5%;
+    
+}
+::selection {
+    background-color: #121212;
+    color: #EDEDED;
+    text-shadow: none;
+}
+p{
+    text-align: justify;
+}
+p span{
+    color: rgb(15,180,245) !important;
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width:688px) {
+    .qn-box .qsbox{
+        flex-direction: column;
+    }
+    .qn-box .qsbox .q{
+        margin: 4% 0%;
+    }
+    mark{
+        display: block;
+        width: fit-content;
+    }
+    p{
+    text-align: left;
+    }
+    .qn-box .ansbox fieldset {
+    width: fit-content;
+    padding: 0px;
+    border: none;
+    }
+    legend{
+        margin-bottom: 12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="space"></div>
+    <!-- question 5 -->
+    <div class="qn-box">
+        <div class="qsbox"> <div class="q">Q</div> <div class="qs">Html Headings & Formatting Tags</div></div>
+        <div class="ansbox">
+            <!-- html part start  -->
+
+            <!-- html heading part  -->
+            <span> <mark>HTML Heading </mark>
+                <p>
+                    <p> A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage. When you place the text within the heading tags &lt;h1 &gt; ......... &lt;/h1&gt;, it is displayed on the browser in the bold format and size of the text depends on the number of heading.</p> 
+                    <p>There are six different HTML headings which are defined with the &lt; h1 &gt;  to  &lt; h6 &gt; tags, from highest level h1 (main heading) to the least level h6 (least important heading). </p>
+                    <p>h1 is the largest heading tag and h6 is the smallest one. So h1 is used for most important heading and h6 is used for least important. They represent &lt; h1 &gt; to &lt; h6 &gt; tags show the importance of headings </p>
+                </p>
+                <form>
+                    <fieldset>
+                      <legend>Example</legend>
+                     
+                      <mark> Example of heading tags</mark> <br>
+                        <p><h2>Below link show the heading tag example </h2></p>
+                            <a href=" https://www.tutorialrepublic.com/lib/images/html/html-headings.png" target="_blank"> click here for Example</a><br>
+                    </fieldset>
+                  </form>
+            </span>
+
+            <!-- html formatting tags part  -->
+            <span> <mark>HTML Formatting Tags </mark>
+                <p>
+                    <p>HTML Formatting is a process of formatting text for better look and feel. HTML provides us ability to format text without using CSS. There are many formatting tags in HTML. These tags are used to make text bold, italicized, or underlined. There are almost 14 options available that how text appears in HTML and XHTML.
+                    </p> 
+                    <p>🔷 Physical tag: These tags are used to provide the visual appearance to the text.</p>
+                    <p>🔷 Physical tag: These tags are used to provide the visual appearance to the text.</p>
+                </p>
+                <form>
+                    <fieldset>
+                      <legend>Formatting Tags</legend>
+                        
+                      <table class="alt" border="1" cellspacing="0">
+                        <tbody><tr>
+                        <th>Element name</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>This is a physical tag, which is used to bold the text written between it.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;strong&gt; </td>
+                        <td>This is a logical tag, which tells the browser that the text is important.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>This is a physical tag which is used to make text italic. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>This is a logical tag which is used to display content in italic. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td>This tag is used to highlight text. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;u&gt;</td>
+                        <td>This tag is used to underline text written between it. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;tt&gt;</td>
+                        <td>This tag is used to appear a text in teletype. (not supported in HTML5)</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;strike&gt;</td>
+                        <td>This tag is used to draw a strikethrough on a section of text. (Not supported in HTML5) </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;sup&gt;</td>
+                        <td>It displays the content slightly above the normal line.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;sub&gt;</td>
+                        <td>It displays the content slightly below the normal line. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;del&gt;</td>
+                        <td>This tag is used to display the deleted content. </td>
+                        </tr>
+                        <tr>
+                        <td>&lt;ins&gt;</td>
+                        <td>This tag displays the content which is added</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;big&gt;</td>
+                        <td>This tag is used to increase the font size by one conventional unit.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;small&gt;</td>
+                        <td>This tag is used to decrease the font size by one unit from base font size. </td>
+                        </tr>
+                        </tbody></table>
+                        <br>
+                        <h2>Below link show the role of formatting tags </h2>
+                            <a href="https://www.tutorialbrain.com/wp-content/uploads/2019/01/HTML-formatting-tags-410x1024.jpg" target="_blank"> click here for html formatting tags example </a> <br>
+                    </fieldset>
+                  </form>
+            </span>
+        </div>
+    </div>
+    <div class="space"></div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http vs https</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1B1B1B;
+}
+.qn-box{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+.qn-box .qsbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    color: #555555;
+    padding: 16px;
+}
+.qn-box .qsbox .q{
+    color: skyblue;
+}
+.qn-box .qsbox .qs{
+    word-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.qn-box .ansbox{
+    width: 100%;
+    background-color: #171717;
+    height: auto;
+}
+.qn-box .ansbox span{
+    display: block;
+    padding: 15px 15px;
+    color: #555555;
+    line-height: 35px;
+}
+.qn-box .ansbox span mark{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+    padding: 6px;
+    margin: 0 15px 0 0;
+    color: rgb(15,180,245);
+}
+
+.qn-box .ansbox form{
+    margin-top: 20px;
+}
+.qn-box .ansbox fieldset{
+    width: fit-content;
+    padding: 25px;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+legend:hover{
+    background-color: #333;
+    border-top: 1px solid rgb(15,180,245);
+}
+.space{
+    margin: 5%;
+    
+}
+::selection {
+    background-color: #121212;
+    color: #EDEDED;
+    text-shadow: none;
+}
+p{
+    text-align: justify;
+}
+p span{
+    color: rgb(15,180,245) !important;
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width:688px) {
+    .qn-box .qsbox{
+        flex-direction: column;
+    }
+    .qn-box .qsbox .q{
+        margin: 4% 0%;
+    }
+    mark{
+        display: block;
+        width: fit-content;
+    }
+    p{
+    text-align: left;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="space"></div>
+    <!-- question 5 -->
+    <div class="qn-box">
+        <div class="qsbox"> <div class="q">Q</div> <div class="qs">What Http & Https ?</div></div>
+        <div class="ansbox">
+            <!-- http part start  -->
+            <span> 
+                <mark>What is HTTP?</mark>
+                <p> An HTTP stands for Hypertext Transfer Protocol. The HTTP protocol provides communication between different communication systems. When the user makes an HTTP request on the browser, then the webserver sends the requested data to the user in the form of web pages. In short, we can say that the HTTP protocol allows us to transfer the data from the server to the client.</p> 
+                <p> An HTTP is an application layer protocol that comes above the TCP layer. It has provided some standard rules to the web browsers and servers, which they can use to communicate with each other.</p>
+                <p>An HTTP is a stateless protocol as each transaction is executed separately without having any knowledge of the previous transactions, which means that once the transaction is completed between the web browser and the server, the connection gets lost.</p>
+
+                <!-- https part start  -->
+                <mark>What is HTTPS?</mark>
+                <p> The full form of HTTPS is Hypertext Transfer Protocol Secure. The HTTP protocol does not provide the security of the data, while HTTP ensures the security of the data. Therefore, we can say that HTTPS is a secure version of the HTTP protocol. This protocol allows transferring the data in an encrypted form. The use of HTTPS protocol is mainly required where we need to enter the bank account details. The HTTPS protocol is mainly used where we require to enter the login credentials. In modern browsers such as chrome, both the protocols, i.e., HTTP and HTTPS, are marked differently. To provide encryption, HTTPS uses an encryption protocol known as Transport Layer Security, and officially, it is referred to as a Secure Sockets Layer (SSL). This protocol uses a mechanism known as asymmetric public key infrastructure, and it uses two different keys which are given below:</p> 
+                <p>🔷 Private key: This key is available on the web server, which is managed by the owner of a website.
+                    It decrypts the information which is encrypted by the public key.</p>
+                <p>🔷 Public key: This key is available to everyone. It converts the data into an encrypted form.</p>
+                <br>
+                <mark>Main difference HTTP and HTTPS</mark>
+                <p>🔷 The major difference between the HTTP and HTTPS is the SSL certificate. The HTTPS protocol is an extended version of the HTTP protocol with an additional feature of security.</p>
+                <p>🔷 This additional feature of security is very important for those websites which transmit sensitive data such as credit card information..</p>
+                <form>
+                    <fieldset>
+                      <legend>difference HTTP and HTTPS</legend>
+                        <mark> HTTP VS HTTPS </mark> <br>
+                        <p><h2>Below link show the role of HTTP and HTTPS </h2></p>
+                            <a href="https://www.sitesbay.com/http/images/difference-between-http-and-https.png" target="_blank"> click here for HTTP and HTTPS example </a> <br>
+                            <br>
+                        <hr> <br>
+                    </fieldset>
+                  </form>
+                <br>
+                <form>
+                    <fieldset>
+                      <legend>DIFFRENCE HTTP & HTTPS</legend>
+                        <table  border="1" cellspacing="0">
+                            <tbody><tr>
+                            <th>HTTP</th>
+                            <th>HTTPS</th>
+                            </tr>
+                            <tr>
+                            <td>The full form of HTTP is the Hypertext Transfer Protocol.</td>
+                            <td>The full form of HTTPS is Hypertext Transfer Protocol Secure.</td>
+                            </tr>
+                            <tr>
+                            <td>It is written in the address bar as http://.</td>
+                            <td>It is written in the address bar as https://.</td>
+                            </tr>
+                            <tr>
+                            <td>The HTTP transmits the data over port number 80.</td>
+                            <td>The HTTPS transmits the data over port number 443.</td>
+                            </tr>
+                            <tr>
+                            <td>It is unsecured as the plain text is sent, which can be accessible by the hackers.</td>
+                            <td>It is secure as it sends the encrypted data which hackers cannot understand.</td>
+                            </tr>
+                            <tr>
+                            <td>It is mainly used for those websites that provide information like blog writing.</td>
+                            <td>It is a secure protocol, so it is used for those websites that require to transmit the bank account details or credit card numbers.</td>
+                            </tr>
+                            <tr>
+                            <td>It is an application layer protocol.</td>
+                            <td>It is a transport layer protocol.</td>
+                            </tr>
+                            <tr>
+                            <td>It does not use SSL.</td>
+                            <td>It uses SSL that provides the encryption of the data.</td>
+                            </tr>
+                            <tr>
+                            <td>Google does not give the preference to the HTTP websites.</td>
+                            <td>Google gives preferences to the HTTPS as HTTPS websites are secure websites.</td>
+                            </tr>
+                            <tr>
+                            <td>The page loading speed is fast.</td>
+                            <td>The page loading speed is slow as compared to HTTP because of the additional feature that it supports, i.e., security.</td>
+                            </tr>
+                            </tbody></table>
+                        <hr> <br>
+                    </fieldset>
+                  </form>
+            </span>
+        </div>
+    </div>
+    <div class="space"></div>
+</body>
+</html>
